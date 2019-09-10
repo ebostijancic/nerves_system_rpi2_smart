@@ -1,0 +1,4 @@
+config BR2_PACKAGE_INFLUXDB
+	bool "influxdb"
+	help
+      InfluxDB time-series database.
