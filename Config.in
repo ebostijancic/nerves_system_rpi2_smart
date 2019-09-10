@@ -4,3 +4,4 @@
 # Nerves or Buildroot.
 
 source "$NERVES_DEFCONFIG_DIR/package/influxdb/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/grafana/Config.in"

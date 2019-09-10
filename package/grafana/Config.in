@@ -1,0 +1,4 @@
+config BR2_PACKAGE_GRAFANA
+	bool "grafana"
+	help
+      Grafana time-series visualization.
