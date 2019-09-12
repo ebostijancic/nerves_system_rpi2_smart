@@ -1,0 +1,5 @@
+ntp               123/tcp
+ntp               123/udp
+
+influx            8086/tcp
+grafana           3000/tcp
