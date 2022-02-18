@@ -1,4 +1,6 @@
-GRAFANA_VERSION = 6.3.5
+# wget https://dl.grafana.com/oss/release/grafana-$(GRAFANA_VERSION).linux-armv7.tar.gz
+
+GRAFANA_VERSION = 8.3.4
 GRAFANA_SOURCE = grafana-$(GRAFANA_VERSION).linux-armv7.tar.gz
 GRAFANA_SITE = https://dl.grafana.com/oss/release
 
