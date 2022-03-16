@@ -2,7 +2,7 @@ defmodule NervesSystemRpi2.MixProject do
   use Mix.Project
 
   @github_organization "ebostijancic"
-  @app :nerves_system_rpi2_smart
+  @app :smart_meter_rpi2
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -41,9 +41,7 @@ defmodule NervesSystemRpi2.MixProject do
   defp nerves_package do
     [
       type: :system,
-      artifact_sites: [
-        {:github_releases, "#{@github_organization}/#{@app}"}
-      ],
+      artifact_sites: [],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
       platform_config: [
@@ -65,7 +63,7 @@ defmodule NervesSystemRpi2.MixProject do
   defp deps do
     [
       {:nerves, "~> 1.5.4 or ~> 1.6.0 or ~> 1.7.4", runtime: false},
-      {:nerves_system_br, "1.18.3", runtime: false},
+      {:nerves_system_br, "1.18.4", runtime: false},
       {:nerves_toolchain_armv7_nerves_linux_gnueabihf, "~> 1.5.0", runtime: false},
       {:nerves_system_linter, "~> 0.4", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.22", only: :docs, runtime: false}

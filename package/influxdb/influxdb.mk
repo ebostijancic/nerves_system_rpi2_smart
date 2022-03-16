@@ -6,6 +6,10 @@ INFLUXDB_SITE = https://dl.influxdata.com/influxdb/releases
 
 INFLUXDB_INSTALL_STAGING = NO
 
+define INFLUXDB_USERS
+	influx 8086 influx 8086 ! /root/home/influx/ /bin/sh - Grafana
+endef
+
 define INFLUXDB_EXTRACT_CMDS
 	tar xzvf $(DL_DIR)/influxdb/$(INFLUXDB_SOURCE) -C $(@D) --strip-components=2
 endef
